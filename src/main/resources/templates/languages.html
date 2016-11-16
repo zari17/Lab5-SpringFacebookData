@@ -1,0 +1,23 @@
+<html>
+	<head>
+		<title>Hello Facebook</title>
+	</head>
+	<body>
+		<h3>Hello, <span th:text="${facebookProfile.getFirstName()}">Some User</span>!</h3>
+		
+		<h4>Here is your languages:</h4>
+		
+<div th:each="language:${languages}">
+
+    <b th:text="${language.getName()}">Name</b>
+<!--      <b th:text="${friend.getLastName()}">Surname</b> -->
+<!--  		<div th:each="language:${languages}">   -->
+ 	
+<!-- 		<b th:text="${language.getName()}">Name</b> <b th:text="${language.getId()}">Id</b> -->
+<!-- 			<p th:text="${post.message}">message text</p> -->
+<!-- 			<img th:if="${post.picture}" th:src="${post.picture}"/> -->
+ 			<hr/>
+               
+		</div> 
+	</body>
+</html>
